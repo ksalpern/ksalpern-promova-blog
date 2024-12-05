@@ -4,17 +4,11 @@ import urlFor from "@/sanity/lib/urlFor";
 
 const Card = ({ post }: { post: Post }) => {
   return (
-    <div className='w-full min-h-60 rounded-3xl p-0.5 max-h-[500px] relative after:absolute after:size-1/2 after:rounded-full after:bg-violet-800 after:bottom-0 after:right-0 after:transform after:translate-x-1/2 after:translate-y-1/2 overflow-hidden after:blur-3xl flex flex-col before:absolute before:size-1/2 before:rounded-full before:bg-fuchsia-800 before:top-0 before:left-0 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:blur-3xl border border-white/5 group'>
+    <div className='w-full h-full rounded-3xl p-0.5 max-h-[500px] relative after:absolute after:size-1/2 after:rounded-full after:bg-violet-800 after:bottom-0 after:right-0 after:transform after:translate-x-1/2 after:translate-y-1/2 overflow-hidden after:blur-3xl flex flex-col before:absolute before:size-1/2 before:rounded-full before:bg-fuchsia-800 before:top-0 before:left-0 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:blur-3xl border border-white/5 group'>
       <div className='bg-black/10 backdrop-blur-3xl flex-1 rounded-3xl relative z-10 p-2 flex flex-col gap-2 md:gap-4 overflow-y-auto'>
         <div className='w-full min-h-40 overflow-hidden rounded-2xl relative'>
           <Image
             src={urlFor(post.mainImage).url()}
-            // width={100}
-            // height={100}
-            // style={{
-            //   width: "100%",
-            //   height: "auto",
-            // }}
             fill
             alt={post.author.name}
             className='object-cover w-full h-full group-hover:scale-105 duration-200'

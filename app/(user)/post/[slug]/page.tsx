@@ -71,7 +71,7 @@ async function Post({ params: { slug } }: Props) {
             <div>
               <h2 className='italic pt-10'>{post.description}</h2>
               <div className='flex items-center justify-end mt-auto space-x-2'>
-                {post.categories.map((category) => (
+                {post.categories?.map((category) => (
                   <p
                     key={category._id}
                     className='bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-semibold mt-4'
