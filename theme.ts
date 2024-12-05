@@ -2,8 +2,8 @@ import { buildLegacyTheme } from "sanity";
 
 const props = {
   "--my-white": "#fafafa",
-  "--my-black": "#181C14",
-  "--accent": "#6A42C2",
+  "--my-black": "#0F0F0F",
+  "--accent": "#7752FE",
   "--my-red": "#FA4032",
   "--my-yellow": "#FAB12F",
   "--my-green": "#88C273",
@@ -16,7 +16,7 @@ export const myTheme = buildLegacyTheme({
   '--gray-base': '#666',
   '--component-bg': props['--my-black'],
   '--component-text-color': props['--my-white'],
-  
+
   /* Brand */
   '--brand-primary': props['--accent'],
 

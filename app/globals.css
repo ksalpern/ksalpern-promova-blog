@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f4f4f4;
   --foreground: #171717;
+  --accent: #7752FE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +19,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  display: none;
 }
